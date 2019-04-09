@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'application' 
+}
+
+mainClassName = 'greeter.Greeter'
+
+dependencies {
+    compile project(':greeting-library')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
